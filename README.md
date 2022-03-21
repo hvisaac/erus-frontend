@@ -25,3 +25,20 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+---------Instalation----------------------------
+
+nodejs version 12 or more is required. 
+
+angular CLI install: npm i @angular/cli.
+
+download with git clone https://github.com/hvisaac/erus-frontend.git 
+
+install the packages with npm install and run the project with ng serve in the folder of this project.
+
+go to http://localhost:4200.
+
+stats option it show us a pie chart with mutants and no mutants case.
+
+list option it show us a list of the mutants and no mutants cases.
