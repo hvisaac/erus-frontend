@@ -1,0 +1,23 @@
+<mat-slider
+  thumbLabel
+  [displayWith]="formatLabel"
+  tickInterval="1"
+  step="1"
+  min="4"
+  max="12"
+  aria-label="units">
+</mat-slider>
+     
+<mat-list >
+
+    <mat-form-field appearance="fill">
+        <mat-label>Select a nitroged base</mat-label>
+            <mat-select disableRipple>
+            <mat-option value="A">A</mat-option>
+            <mat-option value="T">T</mat-option>
+            <mat-option value="C">C</mat-option>
+            <mat-option value="G">G</mat-option>
+        </mat-select>
+    </mat-form-field>
+
+</mat-list>

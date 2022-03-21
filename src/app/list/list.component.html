@@ -1,0 +1,30 @@
+<div class="mat-elevation-z8">
+    <table mat-table [dataSource]="dataSource">
+        <!-- Position Column -->
+        <ng-container matColumnDef="date">
+            <th mat-header-cell *matHeaderCellDef> Date </th>
+            <td mat-cell *matCellDef="let element"> {{element.date}} </td>
+        </ng-container>
+      
+        <ng-container matColumnDef="dna">
+            <th mat-header-cell *matHeaderCellDef> DNA </th>
+            <td mat-cell *matCellDef="let element"> {{element.dna}} </td>
+        </ng-container>
+  
+        <!-- Name Column -->
+        <ng-container matColumnDef="hasmutation">
+            <th mat-header-cell *matHeaderCellDef> Has Mutation </th>
+            <td mat-cell *matCellDef="let element"> {{element.hasMutation}} </td>
+        </ng-container>
+  
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+
+    </table>
+
+    <mat-paginator [pageSizeOptions]="[10]" 
+    showFirstLastButtons 
+    aria-label="Select page of periodic elements">
+    </mat-paginator>
+
+  </div>
